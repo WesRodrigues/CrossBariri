@@ -1,0 +1,214 @@
+/*=====FONTE=====*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*=====CSS RESET=====*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*===================*/
+
+
+/*=====VARIAVEIS PARA CORES=====*/
+:root {
+    --cor-primaria: #201E1F;
+    --cor-secundaria: #E20403;
+    --cor-terciaria: #FEFEFE;
+    --cor-background: #1B1B1B;
+}
+/*===================*/
+
+
+/*=====BODY=====*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--cor-background);
+    
+}
+/*==============*/
+
+
+/*=====CABECALHO=====*/
+/* Estilo do cabeçalho */
+.header {
+    background-color: #333;
+    background: linear-gradient(to bottom, var(--cor-secundaria) 0%, #7F100F 80%, #4D1615 85%, var(--cor-background) 100%);
+    padding: 10px 20px;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.kerobel {
+    width: 95%;
+}
+.header__hamburger {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.header__nav {
+    display: flex;
+    position: absolute;
+    z-index: 100;
+
+}
+.header__menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+.header__menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+@media (max-width: 768px) {
+    .header__hamburger {
+        display: block;
+    }
+
+    .header__nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .header__nav.active {
+        display: flex;
+    }
+
+    .header__menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+/*===================*/
+
+
+/*=====MAIN PAG INICIAL=====*/
+/*DEFINIÇÕES GERAIS; ALINHAMENTO/FONTE*/
+.conteudoprincipal {
+    flex-grow: 1;
+    background-color: var(--cor-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+    z-index: 1;
+}
+/*PARTICULARIDADES DO TÍTULO PRINCIPAL*/
+.conteudoprincipal__tituloprincipal {
+    display: flex;
+    margin: 0 0 35px 0;
+    color: var(--cor-terciaria);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+}
+/*ESTILIZAÇÃO DO COUNTAINER DAS REFERENCIAS*/
+.conteudoprincipal__referencias {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--cor-terciaria);
+    line-height: 1;
+}
+/*CONDIÇÕES INICIAIS OU ANTES DA ANIMAÇÃO*/
+.conteudoprincipal__referencias--pioneiro{
+    padding: 5px 0px;
+    font-size: 1rem;
+    display: inline-block;
+    text-align: center;
+    height: fit-content;   
+}
+.conteudoprincipal__referencias--2018 {
+    padding: 5px 0px;
+    font-size: 10px;
+    display: inline-block;
+    text-align: center;
+    opacity: 0; /*PARA INICIAR INVISIVEL*/
+    transition: opacity 2s ease; /*TEMPO DA TRANSIÇÃO*/
+}
+.conteudoprincipal__referencias--profissionalismo {
+    padding: 5px 0px;
+    font-size: 10px;
+    display: inline-block;
+    text-align: center;
+    opacity: 0; /*PARA INICIAR INVISIVEL*/
+    transition: opacity 2s ease; /*TEMPO DA TRANSIÇÃO*/
+}
+/*PARA DEFINIR QUEM APARECE PRIMEIRO*/
+.conteudoprincipal__referencias--2018.visivel {
+    animation: fadeIn 2s forwards;
+}
+.conteudoprincipal__referencias--profissionalismo.visivel {
+    animation: fadeIn 2s 1s forwards;
+}
+/*ANIMAÇÃO DA OPACIDADE*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/*FOTO INICIA INVISIVEL*/
+.fotoBarra {
+    text-align: center;
+    width: 330px;
+    padding: 30px 0;
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+/*CONDIÇÕES FINAIS DA ANIMAÇÃO*/
+/*VIEWPORT DO JS*/
+.fotoBarra.visivel {
+    opacity: 1;
+}
+/*==========================*/
+
+
+/*=====RODAPE=====*/
+/*CONTAINER*/
+.rodape {
+    color: var(--cor-terciaria);
+    padding: 1%;
+    background: linear-gradient(to top, var(--cor-secundaria) 0%, #7F100F 10%, #4D1615 50%, var(--cor-background) 100%);
+    text-align: center;
+}
+/*LINK QUE LEVA AO LOCAL NO GOOGLE MAPS*/
+.linkEnderecoRodape {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+/*VEOTR DE POINT MAP*/
+.vetorPointMap {
+    width: 20px;
+    height: 20px;
+}
+/*================*/

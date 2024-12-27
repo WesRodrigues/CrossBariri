@@ -1,0 +1,193 @@
+/*=====FONTE=====*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/*=====CSS RESET=====*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*===================*/
+
+
+/*=====VARIAVEIS PARA CORES=====*/
+:root {
+    --cor-primaria: #201E1F;
+    --cor-secundaria: #E20403;
+    --cor-terciaria: #FEFEFE;
+    --cor-background: #1B1B1B;
+}
+/*===================*/
+
+
+
+/*===================*/
+/*== AREA DE TESTE ==*/
+/*=======ABAIXO======*/
+/*===================*/
+
+/*===================*/
+/*== AREA DE TESTE ==*/
+/*=======ACIMA=======*/
+/*===================*/
+
+
+
+/*=====ESTILIZACAO DOS PLANOS=====*/
+/*COUNTAINER MAIN*/
+.conteudoprincipalPlanos {
+    flex-grow: 1;
+    background-color: var(--cor-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+}
+.gapDosPlanos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+/*DEIXA A IMAGEM "CONTRATAR" À DIREITA.*/
+.alinharWhtasAppBotao {
+    display: flex;
+    justify-content: space-between;
+    align-items: row;
+}
+/*AJUSTA O TAMANHO DA IMAGEM "CONTRATAR"*/
+.whatsAppBotao {
+    width: 80px;
+    height: 50px;
+}
+
+/*ALINHAR EM ROW OS VALORES DE CADA PLANO*/
+.alinhamentoDosValores {
+    display: flex;
+    justify-content: space-between;
+    align-items: row;
+    margin-bottom: 5px;
+}
+/*ESTILIZAR AS FONTES DOS VALORES*/
+.DiasEvaloresEsquerda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15PX;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: 0 0 0 20px;   
+}
+.DiasEvaloresDireita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15PX;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: 0 20px 0 0;
+}
+/*strongs usados no valor e tipo de plano*/
+.conteudoprincipal__plano--destaquePeriodo {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    font-style: normal;
+    background-color: var(--cor-secundaria);
+    margin-top: -10px;
+    padding: 8px 8px;
+    width: 180px;
+    display: inline-block;
+    color: var(--cor-terciaria);
+    border-radius: 15px 15px 15px 15px;
+    padding: 10px 10px 10px 0;
+}
+.conteudoprincipal__plano--destaqueValores {
+    color: var(--cor-secundaria)
+}
+/*CONTAINERS PARA BACKGROUND DOS PLANOS*/
+.conteudoprincipal__plano--mensal {
+    background-color: var(--cor-terciaria);
+    border-radius: 15px 15px 15px 15px;
+    width: 300px;
+    padding: 0 0 0 4%;
+}
+.conteudoprincipal__plano--trimestral {
+    background-color: var(--cor-terciaria);
+    border-radius: 15px 15px 15px 15px;
+    width: 300px;
+    padding: 0 0 0 4%;
+}
+.conteudoprincipal__plano--semestral {
+    background-color: var(--cor-terciaria);
+    border-radius: 15px 15px 15px 15px;
+    width: 300px;
+    padding: 0 0 0 4%;
+}
+/*================================*/
+
+
+/*=====ANIMAÇÃO DOS PLANOS=====*/
+@keyframes crescer {
+    from {
+        transform: scaleX(0) translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: scaleX(1) translateX(0);
+        opacity: 1;
+    }
+}
+/*CLASSE PARA CRESCER*/
+.conteudoprincipal__plano--animar {
+    animation: crescer 0.8s ease-out forwards;
+    transform-origin: left;
+}
+/*=============================*/
+
+
+/*=====METODOS DE PAGAMENTO=====*/
+/*CONTAINER DOS METODOS DE PAGAMENTO E DOS VETORES*/
+.containerDosVetores {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+    padding: 40px 0 0 0;
+}
+/*TITULO METODOS DE PAGAMENTO*/
+
+
+/*COUNTAINER A VISTA OU PARCELADO*/
+.containerAvistaOuParcelado {
+    font-size: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    color: var(--cor-terciaria); 
+}
+/*VETORES DE PAGAMENTO*/
+.vetorDinheiro {
+    width: 50px;
+    height: 40px;
+}
+.vetorPix {
+    width: 50px;
+    height: 40px;
+   
+}
+.vetorCartao {
+    width: 50px;
+    height: 40px;
+}
+/*=============================*/

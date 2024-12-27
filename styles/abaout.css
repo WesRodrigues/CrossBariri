@@ -1,0 +1,119 @@
+/*=====FONTE=====*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/*=====CSS RESET=====*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*===================*/
+
+
+/*=====VARIAVEIS PARA CORES=====*/
+:root {
+    --cor-primaria: #201E1F;
+    --cor-secundaria: #E20403;
+    --cor-terciaria: #FEFEFE;
+    --cor-background: #1B1B1B;
+}
+/*===================*/
+
+
+/*=====MAIN DA PÁGINA SOBRE=====*/
+.conteudoprincipalSobre {
+    flex-grow: 1;
+    background-color: var(--cor-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+}
+/*==============================*/
+
+
+/*=====CONTAINER BIOGRAFIA DA ACADEMIA=====*/
+.containerAcademiaEimagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#centralizarImagemAlunos {
+    display: flex;
+    justify-content: center;
+}
+.fotoAlunos {
+    display: block;
+    max-width: 100%;
+}
+/*=========================================*/
+
+
+/*=====CONTAINER COACH=====*/
+.containerCoachEimagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.fotoCoach {
+    height: 250px;
+}
+/*=========================================*/
+
+
+/*=====ESTILOS PARA TITULO COACH=====*/
+/*DEIXAR LINHAS E COACH EM ROW*/
+.linhasCoach {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 8px;
+}
+/*AJUSTE DAS LINHAS*/
+.linhaEsquerdaCoach {
+    width: 100px;
+}
+.linhaDireitaCoach {
+    width: 100px;
+}
+/*===================================*/
+
+
+/*=====ESTILOS TEXTO=====*/
+.tituloAcademia {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--cor-terciaria);
+}
+.textoAcademia {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: justify;
+    color: var(--cor-terciaria);
+    padding: 4%;
+}
+.tituloCoach {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--cor-terciaria);
+}
+.textoCoach {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: justify;
+    color: var(--cor-terciaria);
+    padding: 4%;
+}
+/*=======================*/
+

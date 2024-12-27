@@ -1,0 +1,74 @@
+/*=====FONTE=====*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/*=====CSS RESET=====*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*===================*/
+
+
+/*=====VARIAVEIS PARA CORES=====*/
+:root {
+    --cor-primaria: #201E1F;
+    --cor-secundaria: #E20403;
+    --cor-terciaria: #FEFEFE;
+    --cor-background: #1B1B1B;
+}
+/*===================*/
+
+/*=====CONTAINER WHATSAPP=====*/
+.containerWhatsApp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    border: 2px solid red;
+    border-radius: 15px;
+    padding: 30px 73px;
+}
+/*VETOR DO WHATSAPP*/
+.vetorZap {
+    width: 40px;
+    height: 40px;
+}
+/*ESTILO PARA O TEXTO DO LINK PARA O WHATSAPP*/
+.contatoWhatsApp {
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--cor-terciaria);
+}
+/*============================*/
+
+
+/*=====CONTAINER INSTAGRAM====*/
+.containerInsta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    border: 2px solid red;
+    border-radius: 15px;
+    padding: 30px 70px;
+}
+/*VETOR DO INSTAGRAM*/
+.vetorInsta {
+    width: 40px;
+    height: 40px;
+}
+/*ESTILO PARA O TEXTO DO LINK PARA O INSTAGRAM*/
+.contatoInsta {
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--cor-terciaria);
+}
+/*============================*/
